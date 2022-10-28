@@ -1,4 +1,4 @@
-# WakandaSwap SDK
+# WizSwap SDK
 
 ## Running tests
 
@@ -7,13 +7,13 @@ To run the tests, follow these steps. You must have at least node v10 and [yarn]
 First clone the repository:
 
 ```sh
-git clone https://github.com/wakandaswap/wakanda-swap-sdk.git
+git clone https://github.com/wizswap/wiz-swap-sdk.git
 ```
 
-Move into the wakanda-swap-sdk working directory
+Move into the wiz-swap-sdk working directory
 
 ```sh
-cd wakanda-swap-sdk/
+cd wiz-swap-sdk/
 ```
 
 Install dependencies

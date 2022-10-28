@@ -1,17 +1,17 @@
 {
-  "name": "@wakandaswap-libs/sdk",
+  "name": "@wizswap-libs/sdk",
   "private": false,
   "license": "MIT",
-  "version": "1.0.0",
-  "description": "🛠 An SDK for building applications on top of wakandaswap.",
+  "version": "1.0.2",
+  "description": "🛠 An SDK for building applications on top of wizswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/wakandaswap/wakanda-swap-sdk.git",
+  "repository": "https://github.com/wizswap/wiz-swap-sdk.git",
   "keywords": [
-    "wakandaswap",
+    "wizswap",
     "ethereum"
   ],
   "module": "dist/sdk.esm.js",
@@ -24,7 +24,7 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "@wakandaswap-libs/wakanda-swap-core": "file:../wakanda-swap-core",
+    "@wizswap-libs/wiz-swap-core": "^0.1.3",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.1",
