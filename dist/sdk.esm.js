@@ -15,7 +15,7 @@ import IWizPair from '@wizswap-libs/wiz-swap-core/build/IWizPair.json';
 var _SOLIDITY_TYPE_MAXIMA;
 var ChainId;
 (function (ChainId) {
-  ChainId[ChainId["MAINNET"] = 54321] = "MAINNET";
+  ChainId[ChainId["MAINNET"] = 18159] = "MAINNET";
   ChainId[ChainId["TESTNET"] = 97] = "TESTNET";
 })(ChainId || (ChainId = {}));
 var TradeType;
