@@ -29,8 +29,8 @@ var Rounding;
   Rounding[Rounding["ROUND_HALF_UP"] = 1] = "ROUND_HALF_UP";
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(Rounding || (Rounding = {}));
-var FACTORY_ADDRESS = '0x555b5068a7419f7fC221553cFD95a17C7C9fe599';
-var INIT_CODE_HASH = '0x37c15502370a48eeec30349d6226e3fc5bbc307293acb78e6f7326a18a506c2a';
+var FACTORY_ADDRESS = '0x2F55B37603CE77E70674519fFfb1a50613C6b2eF';
+var INIT_CODE_HASH = '0x5d93d90f045bf35ca7f2af38d6757c10f4f7e2702e8b839c139b3b9bfbfdf1f9';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000);
 // exports for internal consumption
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -312,7 +312,7 @@ function Currency(decimals, symbol, name) {
 /**
  * The only instance of the base class `Currency`.
  */
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'MO', 'MineOnlium');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'POM', 'ProofOfMemes');
 var ETHER = Currency.ETHER;
 
 var _WETH;
@@ -367,7 +367,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x92f946D70D999388f8fC17ACa81E9c5d925C89fC', 18, 'WMO', 'Wrapped MineOnlium'), _WETH[ChainId.TESTNET] = /*#__PURE__*/new Token(ChainId.TESTNET, '0xae13d989dac2f0debff460ac112a837c89baa7cd', 18, 'WETH', 'Wrapped ETH'), _WETH);
+var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0xC84D8d03aA41EF941721A4D77b24bB44D7C7Ac55', 18, 'WPOM', 'Wrapped POM'), _WETH[ChainId.TESTNET] = /*#__PURE__*/new Token(ChainId.TESTNET, '0xae13d989dac2f0debff460ac112a837c89baa7cd', 18, 'WETH', 'Wrapped ETH'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
