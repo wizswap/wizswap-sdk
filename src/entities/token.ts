@@ -61,8 +61,8 @@ export const WETH = {
     ChainId.MAINNET,
     '0x40375C92d9FAf44d2f9db9Bd9ba41a3317a2404f',
     18,
-    'WETH',
-    'Wrapped Ether'
+    'WCORE',
+    'Wrapped Core'
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
