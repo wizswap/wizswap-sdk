@@ -20,6 +20,7 @@ var IWizPair = _interopDefault(require('@wizswap-libs/wiz-swap-core/build/IWizPa
 var _SOLIDITY_TYPE_MAXIMA;
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 42161] = "MAINNET";
+  ChainId[ChainId["OLD"] = 4949] = "OLD";
   ChainId[ChainId["TESTNET"] = 97] = "TESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
 (function (TradeType) {
