@@ -17,6 +17,7 @@ var ChainId;
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 42161] = "MAINNET";
   ChainId[ChainId["MAXXCHAIN"] = 10201] = "MAXXCHAIN";
+  ChainId[ChainId["PULSECHAIN"] = 369] = "PULSECHAIN";
   ChainId[ChainId["TESTNET"] = 97] = "TESTNET";
 })(ChainId || (ChainId = {}));
 var TradeType;
@@ -33,11 +34,13 @@ var Rounding;
 var FACTORY_ADDRESSES = {
   42161: '0xd4D27b54AfAE6FC962CA7e66f68f69A78c8a4a4e',
   10201: '0x9Dc356AA4c5e91a204cd4b98932F4605515caC04',
+  369: '0x8038DF95224c5A79cD2584bA1ba681440d7CC331',
   97: '0xd4D27b54AfAE6FC962CA7e66f68f69A78c8a4a4e'
 };
 var INIT_CODE_HASHES = {
   42161: '0x24b9fbce703e53fc654a02ec726636038dd9eef8ac3c9a3172498bb3c7b02ea3',
   10201: '0x90e31d923429e7e1943ded90ab609283a983470bfae94a7d5d5732ef806960c4',
+  369: '0x90e31d923429e7e1943ded90ab609283a983470bfae94a7d5d5732ef806960c4',
   97: '0x24b9fbce703e53fc654a02ec726636038dd9eef8ac3c9a3172498bb3c7b02ea3'
 };
 // export const FACTORY_ADDRESS = '0xd4D27b54AfAE6FC962CA7e66f68f69A78c8a4a4e'
@@ -378,7 +381,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[42161] = /*#__PURE__*/new Token(42161, '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1', 18, 'WETH', 'Wrapped Ether'), _WETH[10201] = /*#__PURE__*/new Token(10201, '0xA29D0ee618f33d8eFE9A20557fd0EF63dD050859', 18, 'WETH', 'Wrapped Ether'), _WETH[ChainId.TESTNET] = /*#__PURE__*/new Token(ChainId.TESTNET, '0xae13d989dac2f0debff460ac112a837c89baa7cd', 18, 'WETH', 'Wrapped Ether'), _WETH);
+var WETH = (_WETH = {}, _WETH[42161] = /*#__PURE__*/new Token(42161, '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1', 18, 'WETH', 'Wrapped Ether'), _WETH[10201] = /*#__PURE__*/new Token(10201, '0xA29D0ee618f33d8eFE9A20557fd0EF63dD050859', 18, 'WETH', 'Wrapped Ether'), _WETH[369] = /*#__PURE__*/new Token(369, '0xA1077a294dDE1B09bB078844df40758a5D0f9a27', 18, 'WETH', 'Wrapped Ether'), _WETH[ChainId.TESTNET] = /*#__PURE__*/new Token(ChainId.TESTNET, '0xae13d989dac2f0debff460ac112a837c89baa7cd', 18, 'WETH', 'Wrapped Ether'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
